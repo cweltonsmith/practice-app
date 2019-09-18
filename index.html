@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Total Calculator</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+    <h1>Maitre D</h1>
+    <main class id>
+        <table class="centered">
+            <tr>
+                <td colspan="2">
+                <label for="total-field">Total:</label>
+                <input id="total-field" value="" type="text" ></td>
+            </tr>
+            <tr class="blank-row">
+            </tr>
+                <td colspan="2"></td>
+            <tr>
+                <td><label>Tip: <span for="tip-amount">$0.0</span></label></td>
+                <td><label for="rate-field">Rate:</label>
+                <input id="rate-field" value="" type="text"  max="100.00"></td>
+            </tr>
+            <tr>
+                <td><label>Tax: <span for="tax-amount">$0.0</span></label></td>
+            </tr>
+            <tr>
+                <td><label>Grand Total: <span for="grand-total">$0.0</span></label></td>
+            </tr>
+        </table>
+        <section>
+            <button clas="btn" id="calculate">Calculate</button>
+        </section>
+    </main
+    <script src="main.js"></script>
+</body>
+</html>
