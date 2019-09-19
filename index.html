@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Total Calculator</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Tip & Tax Calculator</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
+
 <body>
     <h1>Maitre D</h1>
-    <main class id>
-        <table class="centered">
+    <main>
+        <br>
+        <br>
+        <table class="tb">
             <tr>
                 <td colspan="2">
-                <label for="total-field">Total:</label>
-                <input id="total-field" value="" type="text" ></td>
+                    <label for="total-field">Total: $</label>
+                    <input id="total-field" type="text" class="total-field" value="" placeholder="0.00">
+                </td>
             </tr>
-            <tr class="blank-row">
-            </tr>
-                <td colspan="2"></td>
-            <tr>
-                <td><label>Tip: <span for="tip-amount">$0.0</span></label></td>
-                <td><label for="rate-field">Rate:</label>
-                <input id="rate-field" value="" type="text"  max="100.00"></td>
+            <tr class="br">
             </tr>
             <tr>
-                <td><label>Tax: <span for="tax-amount">$0.0</span></label></td>
+                <td>
+                     <label>Tip: <span id="tip-amount">$0.00</span></label>
+                </td>
+                <td>
+                    <label for="rate-field">Rate: %</label>
+                    <input id="rate-field" type="text" class="text-field" value="" placeholder="0.00">
+                </td>
             </tr>
             <tr>
-                <td><label>Grand Total: <span for="grand-total">$0.0</span></label></td>
+                <td>
+                    <label>Tax: <span id="tax-amount">$0.00</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Grand Total: <span id="total-amount">$0.00</span>
+                    </label>
+                </td>
             </tr>
         </table>
+        <br>
         <section>
-            <button clas="btn" id="calculate">Calculate</button>
+            <button id="calculate">Calculate</button>
         </section>
-    </main
+    </main>
     <script src="main.js"></script>
 </body>
+
 </html>
